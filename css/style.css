@@ -602,6 +602,28 @@ ul {
   cursor: pointer;
 }
 
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.portfolio-content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px 32px;
+  background-color: var(--iris);
+  color: var(--cloud);
+  transform: translateY(100%);
+  transition: transform var(--animation);
+}
+
+.portfolio-item:hover .portfolio-content {
+  transform: translateY(0);
+}
+
 .portfolio-description {
   display: flex;
   flex-direction: column;
